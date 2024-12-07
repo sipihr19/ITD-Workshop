@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "yeni1_backend": {
+      "main": "src/yeni1_backend/main.mo",
+      "type": "motoko"
+    },
+    "yeni1_frontend": {
+      "dependencies": [
+        "yeni1_backend"
+      ],
+      "source": [
+        "src/yeni1_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
